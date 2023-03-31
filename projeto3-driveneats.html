@@ -20,9 +20,9 @@
         <div class="titulo">
             Primeiro, seu prato
         </div>
-        <div class="pratos">
-            <button onclink="selecionar()">
-                <div class="prato">
+        <div class="pratos comida">
+            <button onclick="selecionar('.comida', '.veggie')">
+                <div class="prato veggie">
                     <img src="./imagens/veggie.png">
                     <h1>Assado de brócolis e quinoa</h1>
                     <h2>Acompanha salada<br>
@@ -30,8 +30,8 @@
                     <p>R$ 21,90</p>
                 </div>
             </button>
-            <button onclink="selecionar()">
-                <div class="prato">
+            <button onclick="selecionar('.comida', '.feijoada')">
+                <div class="prato feijoada">
                     <img src="./imagens/feijoada.png">
                     <h1>Feijoada</h1>
                     <h2>Acompanha couve,<br>
@@ -39,8 +39,8 @@
                     <p>R$39,90</p>
                 </div>
             </button>
-            <button onclink="selecionar()">
-                <div class="prato">
+            <button onclick="selecionar('.comida', '.bife')">
+                <div class="prato bife">
                     <img src="./imagens/bife.png">
                     <h1>Bife de maminha</h1>
                     <h2>Acompanha arroz,<br>
@@ -52,25 +52,25 @@
         <div class="titulo">
             Agora, sua bebida
         </div>
-        <div class="pratos">
-            <button onclink="selecionar()">
-                <div class="prato">
+        <div class="pratos bebida">
+            <button onclick="selecionar('.bebida', '.coca')">
+                <div class="prato coca">
                     <img src="./imagens/coca.png">
                     <h1>Coca-cola</h1>
                     <h2>lata 350ml</h2>
                     <p>R$6,00</p>
                 </div>
             </button>
-            <button onclink="selecionar()">
-                <div class="prato">
+            <button onclick="selecionar('.bebida', '.coca0')">
+                <div class="prato coca0">
                     <img src="./imagens/coca0.png">
                     <h1>coca-zero</h1>
                     <h2>lata 350ml</h2>
                     <p>R$7,00</p>
                 </div>
             </button>
-            <button onclink="selecionar()">
-                <div class="prato">
+            <button onclick="selecionar('.bebida', '.guarana')">
+                <div class="prato guarana">
                     <img src="./imagens/guarana.png">
                     <h1>guarana</h1>
                     <h2>lata 350ml</h2>
@@ -81,25 +81,25 @@
         <div class="titulo">
             Por fim, sua sobremesa
         </div>
-        <div class="pratos">
-            <button onclink="selecionar()">
-            <div class="prato">
+        <div class="pratos sobremesa">
+            <button onclick="selecionar('.sobremesa', '.bolo')">
+            <div class="prato bolo">
                 <img src="./imagens/bolo.png">
                 <h1>Bolo de pote</h1>
                 <h2>feito com Ninho</h2>
                 <p>R$9,90</p>
             </div>
             </button>
-            <button onclink="selecionar()">
-            <div class="prato">
+            <button onclick="selecionar('.sobremesa', '.brigadeiro')">
+            <div class="prato brigadeiro">
                 <img src="./imagens/brigadeiro.png">
                 <h1>Brigadeiro</h1>
                 <h2>10 unidades</h2>
                 <p>R$9,00</p>
             </div>
             </button>
-            <button onclink="selecionar()">
-                <div class="prato">
+            <button onclick="selecionar('.sobremesa', '.brownie')">
+                <div class="prato brownie">
                     <img src="./imagens/brownie.png">
                     <h1>Brownie</h1>
                     <h2>Com nozes</h2>
@@ -109,10 +109,10 @@
         </div>
     </div>
     <div class="finalizar">
-        <button onclick="finalizado()" disabled>
-            Selecione os 3 itens <br>
-            para fechar o pedido
+        <button class="botao-final" onclick="finalizado()" disabled>
+            <p>Selecione os 3 itens <br>
+               para fechar o pedido</p>
         </button>
     </div>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
   </body>
