@@ -11,11 +11,14 @@ function selecionar(area, item){
     comidasel = document.querySelector(".comida .selecionado");
     bebidasel = document.querySelector(".bebida .selecionado");
     sobremesasel = document.querySelector(".sobremesa .selecionado");
-    console.log (comidasel, bebidasel, sobremesasel);
+    if (comidasel !== null && bebidasel !== null && sobremesasel !== null){
+        document.querySelector(".botao-final").removeAttribute("disabled");
+        const concluir = document.querySelector(".botao-final");
+        concluir.classList.remove("cinza");
+        concluir.classList.add("habilitado");
+        concluir.innerHTML = 'Fechar pedido';
+    }
 }
-if (comidasel !== null && bebidasel !== null && sobremesasel !== null){
-    GamepadButton.removeprop("disabled");
-    const concluir = document.querySelector("botao-final");
-    concluir.classList.add("habilitado");
-    concluir.innerHTML = 'Fechar pedido';
+function finalizado(){
+    alert("oi");
 }
