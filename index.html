@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DrivenEats</title>
+  </head>
+  <body>
+    <div class="cabecalho">
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+    </div>
+    <div class="corpo">
+        <div class="titulo">
+            Primeiro, seu prato
+        </div>
+        <div class="pratos comida">
+            <button onclick="selecionar('.comida', '.veggie')">
+                <div data-test="dish" class="prato veggie">
+                    <img src="./imagens/veggie.png">
+                    <ion-icon class="esconder" name="checkmark-circle-outline"></ion-icon>
+                    <h1 data-test="item-name">Kibe veggie</h1>
+                    <h2>Acompanha salada<br>
+                        e molho pesto</h2>
+                    <p data-test="item-price">R$ <strong class="real">21</strong>,<strong class="cent">90</strong></p>
+                </div>
+            </button>
+            <button onclick="selecionar('.comida', '.feijoada')">
+                <div data-test="dish" class="prato feijoada">
+                    <img src="./imagens/feijoada.png">
+                    <ion-icon class="esconder" name="checkmark-circle-outline"></ion-icon>
+                    <h1 data-test="item-name">Feijoada</h1>
+                    <h2>Acompanha couve,<br>
+                        vinagrete e arroz</h2>
+                    <p data-test="item-price">R$ <strong class="real">39</strong>,<strong class="cent">90</strong></p>
+                </div>
+            </button>
+            <button onclick="selecionar('.comida', '.bife')">
+                <div data-test="dish" class="prato bife">
+                    <img src="./imagens/bife.png">
+                    <ion-icon class="esconder" name="checkmark-circle-outline"></ion-icon>
+                    <h1 data-test="item-name">Bife de maminha</h1>
+                    <h2>Acompanha arroz,<br>
+                        feijão e batata</h2>
+                    <p data-test="item-price">R$ <strong class="real">18</strong>,<strong class="cent">90</strong></p>
+                </div>
+            </button>
+        </div>
+        <div class="titulo">
+            Agora, sua bebida
+        </div>
+        <div class="pratos bebida">
+            <button onclick="selecionar('.bebida', '.coca')">
+                <div data-test="drink" class="prato coca">
+                    <img src="./imagens/coca.png">
+                    <ion-icon class="esconder" name="checkmark-circle-outline"></ion-icon>
+                    <h1 data-test="item-name">Coca-cola</h1>
+                    <h2>lata 350ml</h2>
+                    <p data-test="item-price">R$ <strong class="real">6</strong>,<strong class="cent">90</strong></p>
+                </div>
+            </button>
+            <button onclick="selecionar('.bebida', '.coca0')">
+                <div data-test="drink" class="prato coca0">
+                    <img src="./imagens/coca0.png">
+                    <ion-icon class="esconder" name="checkmark-circle-outline"></ion-icon>
+                    <h1 data-test="item-name">coca-zero</h1>
+                    <h2>lata 350ml</h2>
+                    <p data-test="item-price">R$ <strong class="real">6</strong>,<strong class="cent">50</strong></p>
+                </div>
+            </button>
+            <button onclick="selecionar('.bebida', '.guarana')">
+                <div data-test="drink" class="prato guarana">
+                    <img src="./imagens/guarana.png">
+                    <ion-icon class="esconder" name="checkmark-circle-outline"></ion-icon>
+                    <h1 data-test="item-name">guarana</h1>
+                    <h2>lata 350ml</h2>
+                    <p data-test="item-price">R$ <strong class="real">5</strong>,<strong class="cent">50</strong></p>
+                </div>
+            </button>
+        </div>
+        <div class="titulo">
+            Por fim, sua sobremesa
+        </div>
+        <div class="pratos sobremesa">
+            <button onclick="selecionar('.sobremesa', '.bolo')">
+                <div data-test="dessert" class="prato bolo">
+                    <img src="./imagens/bolo.png">
+                    <ion-icon class="esconder" name="checkmark-circle-outline"></ion-icon>
+                    <h1 data-test="item-name">Bolo de pote</h1>
+                    <h2>feito com Ninho</h2>
+                    <p data-test="item-price">R$ <strong class="real">9</strong>,<strong class="cent">90</strong></p>
+                </div>
+            </button>
+            <button onclick="selecionar('.sobremesa', '.brigadeiro')">
+                <div data-test="dessert" class="prato brigadeiro">
+                    <img src="./imagens/brigadeiro.png">
+                    <ion-icon class="esconder" name="checkmark-circle-outline"></ion-icon>
+                    <h1 data-test="item-name">Brigadeiro</h1>
+                    <h2>10 unidades</h2>
+                    <p data-test="item-price">R$ <strong class="real">7</strong>,<strong class="cent">50</strong></p>
+                </div>
+            </button>
+            <button onclick="selecionar('.sobremesa', '.brownie')">
+                <div data-test="dessert" class="prato brownie">
+                    <img src="./imagens/brownie.png">
+                    <ion-icon class="esconder" name="checkmark-circle-outline"></ion-icon>
+                    <h1 data-test="item-name">Brownie</h1>
+                    <h2>Com nozes</h2>
+                    <p data-test="item-price">R$ <strong class="real">8</strong>,<strong class="cent">50</strong></p>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="finalizar">
+        <button class="botao-final cinza" onclick="finalizado()" disabled>
+            <p>Selecione os 3 itens <br>
+               para fechar o pedido</p>
+        </button>
+    </div>
+    <div class="fundo esconder">
+        <div data-test="confirm-order-modal" class="concluir">
+            <h1 class="bold">Confirme seu pedido</h1>
+            <div class="comid final">
+                <div class="nome">a</div>
+                <div class="preco">1</div>
+            </div>
+            <div class="bebid final">
+                <div class="nome">d</div>
+                <div class="preco">2</div>
+            </div>
+            <div class="sobremes final">
+                <div class="nome">f</div>
+                <div class="preco">3</div>
+            </div>
+            <div class="total final bold">
+                <div>Total</div>
+                <div class="preco">8</div>
+            </div>
+            <button data-test="confirm-order-btn" class="finalizar2 bold centro" onclick="finish()"><h1>Tudo certo, pode pedir!</h1></button>
+            <button data-test="cancel-order-btn" class="cancelar centro" onclick="cancelar()"><h1>Cancelar</h1></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
